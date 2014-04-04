@@ -2,7 +2,9 @@
 earnings-calendar
 =================
 
-Populate a Google Calendar with Earnings Dates from Yahoo Finance
+Populate a Google Calendar with Earnings Dates from Yahoo Finance - eg:
+
+http://goo.gl/ixFQrQ
 
 =====================
 Notes from the author
