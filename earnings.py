@@ -8,9 +8,10 @@ from mycal import MyCalendar
 
 """
 
-Scraper for earnings dates using Yahoo Finance
+Put Earnings Dates from Yahoo Finance in your Google Calendar 
+
 Usage:
-  $ python earnings.py Your-CSV-File-Here
+  $ python earnings.py Your-CSV-File-Here Your-Calendar-Name-Here
 
 Where the CSV file contains all the different tickers
 for the earnings dates you wish to retrieve
@@ -34,6 +35,7 @@ class EarningsDateCalculator:
         print symbol
         print self.getdate(symbol)
 
+    # Super Ghetto Scraper
     def getdate(self, symbol):
         request_url = "http://finance.yahoo.com/q?s=%s"%symbol
         page = urllib2.urlopen(request_url)
@@ -59,7 +61,6 @@ class EarningsDateCalculator:
 
         # print self.companiesdict
         self.companies = self.companiesdict.keys()
-        # print "Done reading in the dict"
         # print self.companies
 
 
